@@ -62,6 +62,7 @@ public class BizCommonConfig {
 
     DATA_PERMISSION,
     DATA_ERROR,
+    CREATE_ACT_LIMIT,
 
 
   }

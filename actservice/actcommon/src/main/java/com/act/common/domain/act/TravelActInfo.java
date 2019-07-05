@@ -1,5 +1,6 @@
 package com.act.common.domain.act;
 
+import com.act.common.mapper.TravelActmapper;
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModelProperty;
@@ -33,6 +34,11 @@ public class TravelActInfo extends BaseActInfoDO {
   @Override
   public String getActType() {
     return "travel";
+  }
+
+  @Override
+  public Class getSingleMapper() {
+    return TravelActmapper.class;
   }
 
 

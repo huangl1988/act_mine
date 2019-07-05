@@ -1,7 +1,8 @@
-package com.act.common.domain.actscope;
+package com.act.common.domain.benifit;
 
 import com.act.datasource.base.entiy.BaseDO;
 import com.baomidou.mybatisplus.annotation.TableName;
+import java.math.BigDecimal;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -9,22 +10,23 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 /**
- * Created by steven on 2019/7/4.
+ * Created by steven on 2019/7/5.
  */
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @EqualsAndHashCode(callSuper = true)
-@TableName("tb_act_shop_scope")
-public class ShoppingActScope extends BaseDO{
+@TableName("tb_beniftis")
+public class BenifitsDO extends BaseDO {
 
-  private String shopId;
+  private String goodIds;
 
-  private String goodsId;
+  private String benifitType;
 
-  private Long actId;
+  private String useMode;
 
-  private String actType;
+  private BigDecimal amount;
+
 
 }

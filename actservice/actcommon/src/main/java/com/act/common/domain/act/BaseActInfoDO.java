@@ -27,8 +27,8 @@ public abstract class BaseActInfoDO extends BaseDO{
   @JsonIgnore
   private Date publishTime;
 
-  public abstract String  getActType();
+  public abstract String getActType();
 
-
+  public abstract Class getSingleMapper();
 
 }
